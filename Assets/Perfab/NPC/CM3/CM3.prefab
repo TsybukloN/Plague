@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
         type: 3}
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
         type: 3}
       propertyPath: m_Name
-      value: DefultCivilian 3
+      value: CM3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86,6 +86,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5209155469267102407}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2ce2ed209ef030747a74a6acfa0a4f3e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8660889776664720926}
   m_SourcePrefab: {fileID: 100100000, guid: 2ce2ed209ef030747a74a6acfa0a4f3e, type: 3}
 --- !u!1 &5980756652974464372 stripped
 GameObject:
@@ -109,3 +113,26 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &8660889776664720926
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5980756652974464372}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 26.831387
+  m_Height: 204.2751
+  m_Direction: 1
+  m_Center: {x: 1.6441344, y: 79.80797, z: -3.9136407}

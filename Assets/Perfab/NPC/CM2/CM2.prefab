@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.021
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
       propertyPath: m_Name
-      value: DefultCivilian2
+      value: CM2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -86,6 +86,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5724393239676973309}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 519414118151414528}
     - targetCorrespondingSourceObject: {fileID: 7036213049465896255, guid: d6373c0af84c72f4c99a72b5c3ad0fc1,
         type: 3}
       insertIndex: -1
@@ -140,3 +144,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &519414118151414528
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8314320604737111497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 29.81281
+  m_Height: 182.16182
+  m_Direction: 1
+  m_Center: {x: -1.0833739, y: 90.58095, z: 1.1587142}

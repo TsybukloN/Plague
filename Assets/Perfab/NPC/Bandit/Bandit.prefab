@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100010, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
       propertyPath: m_Name
-      value: Basic_Bandit
+      value: Bandit
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.95
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.95
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.95
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83,5 +83,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100010, guid: fe55e5a0c1bcd72488aa4508bea6f93b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1502451840450493914}
   m_SourcePrefab: {fileID: 100100000, guid: fe55e5a0c1bcd72488aa4508bea6f93b, type: 3}
+--- !u!1 &7711460107300146531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: fe55e5a0c1bcd72488aa4508bea6f93b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7711460107300178889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1502451840450493914
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7711460107300146531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.48204312
+  m_Height: 1.955818
+  m_Direction: 1
+  m_Center: {x: 0.01795683, y: 0.89549726, z: 0}

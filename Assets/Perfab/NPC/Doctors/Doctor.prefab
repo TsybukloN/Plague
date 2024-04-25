@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8f512f1730c12d04c8ce816a2ebf1dbf,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.07
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f512f1730c12d04c8ce816a2ebf1dbf,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.07
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f512f1730c12d04c8ce816a2ebf1dbf,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.07
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8f512f1730c12d04c8ce816a2ebf1dbf,
         type: 3}
@@ -86,6 +86,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4252589789952748181}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f512f1730c12d04c8ce816a2ebf1dbf,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1264101498722582077}
   m_SourcePrefab: {fileID: 100100000, guid: 8f512f1730c12d04c8ce816a2ebf1dbf, type: 3}
 --- !u!1 &1660940336640070333 stripped
 GameObject:
@@ -109,3 +113,26 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!136 &1264101498722582077
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660940336640070333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.61525345
+  m_Height: 4.1013694
+  m_Direction: 1
+  m_Center: {x: 0.0012302399, y: 1.5506852, z: 0}
