@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
 
     private Vector3 direction;
 
-    private const float gravity = 1000f;
+    private const float gravity = 10000f;
 
     private void Start()
     {
