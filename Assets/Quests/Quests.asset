@@ -16,4 +16,9 @@ MonoBehaviour:
   m_questAssets:
   - {fileID: 11400000, guid: d4f7de9092b8835438f2faad5b09692c, type: 2}
   - {fileID: 11400000, guid: df10915345ae592498d5ca8022b3f187, type: 2}
+  - {fileID: 11400000, guid: 5a88a6e11c7aebd469049e0b74be645d, type: 2}
+  - {fileID: 11400000, guid: 8e73ff08fb7d9d64da91dae9d92d70ab, type: 2}
+  - {fileID: 11400000, guid: a751bdc601e8c6444bc94bcce43b0c8e, type: 2}
+  - {fileID: 11400000, guid: 64e88d2c715b99441ad189e7d3a0fff2, type: 2}
+  - {fileID: 11400000, guid: 1fc99275856b857498254b27d45f4a04, type: 2}
   m_images: []
