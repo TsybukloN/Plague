@@ -164,14 +164,20 @@ MonoBehaviour:
       m_textTableFieldID: 0
     m_stateInfoList:
     - m_actionList: []
-      m_categorizedContentList: []
+      m_categorizedContentList:
+      - m_contentList: []
+      - m_contentList: []
+      - m_contentList: []
     - m_actionList: []
       m_categorizedContentList:
       - m_contentList: []
       - m_contentList: []
       - m_contentList: []
     - m_actionList: []
-      m_categorizedContentList: []
+      m_categorizedContentList:
+      - m_contentList: []
+      - m_contentList: []
+      - m_contentList: []
     m_conditionSet:
       m_conditionList: []
       m_conditionCountMode: 1
@@ -181,7 +187,7 @@ MonoBehaviour:
     m_canvasRect:
       serializedVersion: 2
       x: 199.33334
-      y: 97.33334
+      y: 102.33334
       width: 120
       height: 48
   - m_id:
@@ -259,7 +265,7 @@ MonoBehaviour:
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
   m_message:
-    m_text: Q1
+    m_text: Afanasiy
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0

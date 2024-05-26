@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - Herb1
+  - Herb2
+  - Herb3
   layers:
   - Default
   - TransparentFX
