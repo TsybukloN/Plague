@@ -94,7 +94,8 @@ MonoBehaviour:
     - m_contentList: []
     - m_contentList: []
     - m_contentList: []
-  - m_actionList: []
+  - m_actionList:
+    - {fileID: 5811080046338957488}
     m_categorizedContentList:
     - m_contentList:
       - {fileID: 7879834898219166392}
@@ -337,6 +338,44 @@ MonoBehaviour:
     m_valueType: 0
     m_intValue: 0
     m_stringValue: 
+--- !u!114 &5811080046338957488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c92f583e5cd314caa25bde3971b4fe, type: 3}
+  m_Name: MessageQuestAction
+  m_EditorClassIdentifier: 
+  m_senderSpecifier: 2
+  m_senderID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_targetSpecifier: 0
+  m_targetID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_message:
+    m_text: Arture
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_parameter:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_value:
+    m_valueType: 0
+    m_intValue: 0
+    m_stringValue: 
 --- !u!114 &7879834898219166392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -364,9 +403,9 @@ MonoBehaviour:
       A:Ahem,
       come on. takes Go away.
 
-      P:Wish you good health. (Out of the corner
-      of your eye in open door you notice a bag of herbs in the corner of his room
-      . Perhaps the head doctor would be interested.)'
+      P:Wish you good health. (Out of the corner of
+      your eye in open door you notice a bag of herbs in the corner of his room .
+      Perhaps the head doctor would be interested.)'
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
