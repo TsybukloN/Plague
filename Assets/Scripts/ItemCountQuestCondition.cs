@@ -26,10 +26,10 @@
 
         private bool IsTrue()
         {
-            var demoInventory = FindObjectOfType<DemoInventory>();
-            if (demoInventory != null)
+            var Inventory = FindObjectOfType<Inventory>();
+            if (Inventory != null)
             {
-                var itemCount = demoInventory.GetItemCount((int)itemType);
+                var itemCount = Inventory.GetItemCount((int)itemType);
                 switch (comparison)
                 {
                     case CounterValueConditionMode.AtLeast:

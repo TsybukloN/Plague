@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bcd012716190441b93d87835ed45bb, type: 3}
   m_Name: Quests
   m_EditorClassIdentifier: 
-  m_description: 
+  m_description: Plot of the game Plague(R)
   m_questAssets:
   - {fileID: 11400000, guid: d4f7de9092b8835438f2faad5b09692c, type: 2}
   - {fileID: 11400000, guid: df10915345ae592498d5ca8022b3f187, type: 2}
@@ -24,4 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 894354202098d4444a25fd3cca051e50, type: 2}
   - {fileID: 11400000, guid: 7915fc3559b5f9f429b3c98afc09cc71, type: 2}
   - {fileID: 11400000, guid: 5923b6f9e54d8c848afdeef6b5ca8599, type: 2}
+  - {fileID: 11400000, guid: 79feb16fdc49d1d4695d395acd9685ff, type: 2}
+  - {fileID: 11400000, guid: f7933e533de48e64c80a6e03fb5e1f3f, type: 2}
+  - {fileID: 11400000, guid: 7455fbef1ab859d4094d72dd8e196010, type: 2}
   m_images: []

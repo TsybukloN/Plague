@@ -94,12 +94,12 @@ MonoBehaviour:
   m_originalAsset: {fileID: 0}
   m_fileVersion: 1
   m_id:
-    m_text: 2
+    m_text: Quest 1
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
   m_title:
-    m_text: Quest 1.1
+    m_text: Quest 1
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_offerConditionSet:
     m_conditionList:
     - {fileID: -5187038868750204348}
-    m_conditionCountMode: 0
+    m_conditionCountMode: 1
     m_minConditionCount: 0
     m_numTrueConditions: 0
   m_offerConditionsUnmetContentList: []

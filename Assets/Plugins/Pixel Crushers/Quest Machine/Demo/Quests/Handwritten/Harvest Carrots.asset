@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -40,6 +41,7 @@ MonoBehaviour:
   m_showInTrackHUD: 1
   m_isAbandonable: 1
   m_rememberIfAbandoned: 0
+  m_deleteWhenComplete: 0
   m_autostartConditionSet:
     m_conditionList: []
     m_conditionCountMode: 0
@@ -56,11 +58,13 @@ MonoBehaviour:
   - {fileID: 11405458}
   - {fileID: 11406018}
   - {fileID: 11468224}
+  m_infinitelyRepeatable: 0
   m_maxTimes: 999
   m_timesAccepted: 0
   m_cooldownSeconds: 60
   m_cooldownSecondsRemaining: 0
   m_noRepeatIfSuccessful: 0
+  m_saveAllIfWaitingToStart: 0
   m_state: 0
   m_stateInfoList:
   - m_actionList: []
@@ -340,18 +344,22 @@ MonoBehaviour:
       y: 218
       width: 120
       height: 35
+  m_textTable: {fileID: 0}
   m_goalEntityTypeName: 
+  m_nextContentID: 0
 --- !u!114 &11400526
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5682394e55a192147a020b9edf624e51, type: 3}
   m_Name: MessageQuestCondition
   m_EditorClassIdentifier: 
+  m_alreadyTrue: 0
   m_senderSpecifier: 0
   m_senderID:
     m_text: 
@@ -381,14 +389,16 @@ MonoBehaviour:
 --- !u!114 &11405458
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: I could use a hand with the harvest. Can you pick three carrots? I'll
       pay you 2 coins.
@@ -398,14 +408,16 @@ MonoBehaviour:
 --- !u!114 &11406018
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 0
   m_headingText:
     m_text: Reward
@@ -416,8 +428,9 @@ MonoBehaviour:
 --- !u!114 &11406500
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -438,15 +451,18 @@ MonoBehaviour:
 --- !u!114 &11408476
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5acd9aaaa3b44d5419945259bebbe84a, type: 3}
   m_Name: IconQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_image: {fileID: 21300000, guid: e7af2fb322441f745b809a38382edd5b, type: 3}
+  m_color: {r: 1, g: 1, b: 1, a: 1}
   m_caption:
     m_text: Coins
     m_stringAsset: {fileID: 0}
@@ -457,14 +473,16 @@ MonoBehaviour:
 --- !u!114 &11413408
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -475,14 +493,16 @@ MonoBehaviour:
 --- !u!114 &11422048
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -493,8 +513,9 @@ MonoBehaviour:
 --- !u!114 &11422270
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -530,14 +551,16 @@ MonoBehaviour:
 --- !u!114 &11424362
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -548,14 +571,16 @@ MonoBehaviour:
 --- !u!114 &11425032
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -566,14 +591,16 @@ MonoBehaviour:
 --- !u!114 &11430436
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: '{#carrots}/3 carrots picked.'
     m_stringAsset: {fileID: 0}
@@ -582,8 +609,9 @@ MonoBehaviour:
 --- !u!114 &11442330
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -604,14 +632,16 @@ MonoBehaviour:
 --- !u!114 &11444122
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: You've picked the carrots. Now return to {QUESTGIVER}.
     m_stringAsset: {fileID: 0}
@@ -620,14 +650,16 @@ MonoBehaviour:
 --- !u!114 &11459632
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Return to {QUESTGIVER}
     m_stringAsset: {fileID: 0}
@@ -636,14 +668,16 @@ MonoBehaviour:
 --- !u!114 &11466494
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: '{#carrots}/3 Carrots'
     m_stringAsset: {fileID: 0}
@@ -652,8 +686,9 @@ MonoBehaviour:
 --- !u!114 &11467372
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -666,15 +701,18 @@ MonoBehaviour:
 --- !u!114 &11468224
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5acd9aaaa3b44d5419945259bebbe84a, type: 3}
   m_Name: IconQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_image: {fileID: 21300000, guid: e7af2fb322441f745b809a38382edd5b, type: 3}
+  m_color: {r: 1, g: 1, b: 1, a: 1}
   m_caption:
     m_text: Coins
     m_stringAsset: {fileID: 0}
@@ -685,14 +723,16 @@ MonoBehaviour:
 --- !u!114 &11473702
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Return to {QUESTGIVER}.
     m_stringAsset: {fileID: 0}
@@ -701,14 +741,16 @@ MonoBehaviour:
 --- !u!114 &11474338
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Those carrots aren't going to pick themselves!
     m_stringAsset: {fileID: 0}
@@ -717,14 +759,16 @@ MonoBehaviour:
 --- !u!114 &11475294
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Thanks for helping with the harvest!
     m_stringAsset: {fileID: 0}
@@ -733,8 +777,9 @@ MonoBehaviour:
 --- !u!114 &11475750
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -770,14 +815,16 @@ MonoBehaviour:
 --- !u!114 &11477290
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -788,14 +835,16 @@ MonoBehaviour:
 --- !u!114 &11477502
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
   m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_useQuestTitle: 1
   m_headingText:
     m_text: 
@@ -806,14 +855,16 @@ MonoBehaviour:
 --- !u!114 &11478370
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: You helped {QUESTGIVER} with his carrot harvest.
     m_stringAsset: {fileID: 0}
@@ -822,14 +873,16 @@ MonoBehaviour:
 --- !u!114 &11479438
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Great job! Here's your reward.
     m_stringAsset: {fileID: 0}
@@ -838,8 +891,9 @@ MonoBehaviour:
 --- !u!114 &11480670
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -852,14 +906,16 @@ MonoBehaviour:
 --- !u!114 &11480744
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: Earned 2 coins.
     m_stringAsset: {fileID: 0}
@@ -868,14 +924,16 @@ MonoBehaviour:
 --- !u!114 &11482886
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: It's harvest time! Help {QUESTGIVER} by picking three carrots.
     m_stringAsset: {fileID: 0}
@@ -884,8 +942,9 @@ MonoBehaviour:
 --- !u!114 &11494148
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -896,18 +955,21 @@ MonoBehaviour:
   m_useAudioSourceOn:
     m_type: 0
     m_id: 
+  m_interruptPreviousClip: 0
   m_audioNameProxy: 
 --- !u!114 &11497172
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a976671aaa12c2e428b2aac89a260302, type: 3}
   m_Name: CounterQuestCondition
   m_EditorClassIdentifier: 
+  m_alreadyTrue: 0
   m_counterIndex: 0
   m_counterValueMode: 0
   m_requiredCounterValue:
@@ -917,8 +979,9 @@ MonoBehaviour:
 --- !u!114 &114076154714762482
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -929,14 +992,16 @@ MonoBehaviour:
 --- !u!114 &114917156134127204
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
   m_Name: BodyTextQuestContent
   m_EditorClassIdentifier: 
+  m_contentID: -1
   m_bodyText:
     m_text: 'New Quest: Harvest Carrots'
     m_stringAsset: {fileID: 0}
@@ -945,8 +1010,9 @@ MonoBehaviour:
 --- !u!114 &114968381587936338
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0

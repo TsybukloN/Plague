@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9073098486457748900
+--- !u!114 &-9028761884022898943
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13,11 +13,29 @@ MonoBehaviour:
   m_Name: ActivateGameObjectQuestAction
   m_EditorClassIdentifier: 
   m_gameObjectName:
-    m_text: Afanasiy Church
+    m_text: Afanasiy
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
-  m_state: 1
+  m_state: 0
+--- !u!114 &-8743793989800626713
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Happy
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 0
 --- !u!114 &-8522519975017483695
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,6 +93,21 @@ MonoBehaviour:
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
   m_state: 1
+--- !u!114 &-8403877172156340596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b99cc2a156c22e46b4fb74b06a4d1e8, type: 3}
+  m_Name: AlertQuestAction
+  m_EditorClassIdentifier: 
+  m_contentList:
+  - {fileID: -5596018533690790406}
+  m_contentListSerializationProxy: []
 --- !u!114 &-8156725994795494663
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +165,7 @@ MonoBehaviour:
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
---- !u!114 &-5011854738894761712
+--- !u!114 &-5596018533690790406
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,15 +174,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
-  m_Name: ActivateGameObjectQuestAction
+  m_Script: {fileID: 11500000, guid: c47e1bb9cdd9a474c8d3f5d555d7533a, type: 3}
+  m_Name: HeadingTextQuestContent
   m_EditorClassIdentifier: 
-  m_gameObjectName:
-    m_text: Afanasiy
+  m_contentID: -1
+  m_useQuestTitle: 0
+  m_headingText:
+    m_text: At the next day...
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
-  m_state: 0
+  m_headingLevel: 1
 --- !u!114 &-4855229510605727832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,7 +280,7 @@ MonoBehaviour:
     m_valueType: 0
     m_intValue: 0
     m_stringValue: 
---- !u!114 &-2265298841901735942
+--- !u!114 &-4005211663213046294
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,12 +289,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b99cc2a156c22e46b4fb74b06a4d1e8, type: 3}
-  m_Name: AlertQuestAction
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
   m_EditorClassIdentifier: 
-  m_contentList:
-  - {fileID: 1592800865404573737}
-  m_contentListSerializationProxy: []
+  m_gameObjectName:
+    m_text: Sad
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 1
+--- !u!114 &-2104928647184704470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Directional light
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 0
+--- !u!114 &-1448917160176104752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Isabella Dying
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 1
 --- !u!114 &-73713216456999805
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -374,15 +448,7 @@ MonoBehaviour:
     - m_contentList: []
     - m_contentList: []
     - m_contentList: []
-  - m_actionList:
-    - {fileID: -2265298841901735942}
-    - {fileID: -5011854738894761712}
-    - {fileID: 2615056435995436678}
-    - {fileID: 2975045691520167040}
-    - {fileID: 2124235063156832840}
-    - {fileID: 7997739950588318048}
-    - {fileID: 4061383773699343706}
-    - {fileID: -9073098486457748900}
+  - m_actionList: []
     m_categorizedContentList:
     - m_contentList: []
     - m_contentList: []
@@ -486,6 +552,8 @@ MonoBehaviour:
       - {fileID: 3291322018977506663}
       - {fileID: -8442304540482917721}
       - {fileID: -4539806090307414762}
+      - {fileID: 8173799003006539500}
+      - {fileID: 3936803054016648586}
       m_categorizedContentList:
       - m_contentList: []
       - m_contentList: []
@@ -632,7 +700,18 @@ MonoBehaviour:
         - {fileID: 511342976771179209}
       - m_contentList: []
       - m_contentList: []
-    - m_actionList: []
+    - m_actionList:
+      - {fileID: -8403877172156340596}
+      - {fileID: -9028761884022898943}
+      - {fileID: 5345673400368474245}
+      - {fileID: 8899267385697186509}
+      - {fileID: 5613601399596287290}
+      - {fileID: -1448917160176104752}
+      - {fileID: 5044103612652270416}
+      - {fileID: -8743793989800626713}
+      - {fileID: -4005211663213046294}
+      - {fileID: -2104928647184704470}
+      - {fileID: 1624443900331705563}
       m_categorizedContentList:
       - m_contentList: []
       - m_contentList: []
@@ -719,7 +798,7 @@ MonoBehaviour:
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
---- !u!114 &1592800865404573737
+--- !u!114 &1624443900331705563
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -728,69 +807,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0ed0c4e68ee98946bb5016adda42373, type: 3}
-  m_Name: BodyTextQuestContent
+  m_Script: {fileID: 11500000, guid: 26c92f583e5cd314caa25bde3971b4fe, type: 3}
+  m_Name: MessageQuestAction
   m_EditorClassIdentifier: 
-  m_contentID: -1
-  m_bodyText:
-    m_text: At the next day...
+  m_senderSpecifier: 2
+  m_senderID:
+    m_text: 
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
---- !u!114 &2124235063156832840
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
-  m_Name: ActivateGameObjectQuestAction
-  m_EditorClassIdentifier: 
-  m_gameObjectName:
-    m_text: Graebers
+  m_targetSpecifier: 0
+  m_targetID:
+    m_text: 
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
-  m_state: 1
---- !u!114 &2615056435995436678
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
-  m_Name: ActivateGameObjectQuestAction
-  m_EditorClassIdentifier: 
-  m_gameObjectName:
-    m_text: Wilhelm in Hospital
+  m_message:
+    m_text: Q3
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
-  m_state: 0
---- !u!114 &2975045691520167040
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
-  m_Name: ActivateGameObjectQuestAction
-  m_EditorClassIdentifier: 
-  m_gameObjectName:
-    m_text: Isabella in Hospital
+  m_parameter:
+    m_text: 
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
-  m_state: 0
+  m_value:
+    m_valueType: 0
+    m_intValue: 0
+    m_stringValue: 
 --- !u!114 &3291322018977506663
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -809,7 +854,45 @@ MonoBehaviour:
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
   m_state: 0
---- !u!114 &4061383773699343706
+--- !u!114 &3936803054016648586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c92f583e5cd314caa25bde3971b4fe, type: 3}
+  m_Name: MessageQuestAction
+  m_EditorClassIdentifier: 
+  m_senderSpecifier: 2
+  m_senderID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_targetSpecifier: 0
+  m_targetID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_message:
+    m_text: Get
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_parameter:
+    m_text: Herb3
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_value:
+    m_valueType: 1
+    m_intValue: 3
+    m_stringValue: 
+--- !u!114 &5044103612652270416
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -822,7 +905,43 @@ MonoBehaviour:
   m_Name: ActivateGameObjectQuestAction
   m_EditorClassIdentifier: 
   m_gameObjectName:
-    m_text: Isabella Dying
+    m_text: Afanasiy Church
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 1
+--- !u!114 &5345673400368474245
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Wilhelm in Hospital
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 0
+--- !u!114 &5613601399596287290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Wilhelm Church
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
@@ -842,7 +961,7 @@ MonoBehaviour:
   m_contentID: -1
   m_useQuestTitle: 0
   m_headingText:
-    m_text: Back to the doc
+    m_text: Back to the doctor
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
@@ -922,24 +1041,6 @@ MonoBehaviour:
     m_valueType: 0
     m_intValue: 0
     m_stringValue: 
---- !u!114 &7997739950588318048
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
-  m_Name: ActivateGameObjectQuestAction
-  m_EditorClassIdentifier: 
-  m_gameObjectName:
-    m_text: Wilhelm Church
-    m_stringAsset: {fileID: 0}
-    m_textTable: {fileID: 0}
-    m_textTableFieldID: 0
-  m_state: 1
 --- !u!114 &8100002589538741021
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -958,6 +1059,44 @@ MonoBehaviour:
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
   m_state: 0
+--- !u!114 &8173799003006539500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c92f583e5cd314caa25bde3971b4fe, type: 3}
+  m_Name: MessageQuestAction
+  m_EditorClassIdentifier: 
+  m_senderSpecifier: 2
+  m_senderID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_targetSpecifier: 0
+  m_targetID:
+    m_text: 
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_message:
+    m_text: Get
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_parameter:
+    m_text: Herb1
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_value:
+    m_valueType: 1
+    m_intValue: 2
+    m_stringValue: 
 --- !u!114 &8526088093336395478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -997,3 +1136,21 @@ MonoBehaviour:
     m_valueType: 0
     m_intValue: 0
     m_stringValue: 
+--- !u!114 &8899267385697186509
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dd425597ce38647ade6025cfd66c5e, type: 3}
+  m_Name: ActivateGameObjectQuestAction
+  m_EditorClassIdentifier: 
+  m_gameObjectName:
+    m_text: Isabella in Hospital
+    m_stringAsset: {fileID: 0}
+    m_textTable: {fileID: 0}
+    m_textTableFieldID: 0
+  m_state: 0

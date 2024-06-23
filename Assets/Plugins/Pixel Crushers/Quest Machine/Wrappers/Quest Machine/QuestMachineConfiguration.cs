@@ -1,6 +1,9 @@
 ﻿// Copyright (c) Pixel Crushers. All rights reserved.
 
+using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PixelCrushers.QuestMachine.Wrappers
 {
@@ -12,6 +15,9 @@ namespace PixelCrushers.QuestMachine.Wrappers
     [AddComponentMenu("Pixel Crushers/Quest Machine/Quest Machine Configuration")]
     public class QuestMachineConfiguration : PixelCrushers.QuestMachine.QuestMachineConfiguration
     {
+        protected override void LateUpdate()
+        {
+            
+        }
     }
-
 }

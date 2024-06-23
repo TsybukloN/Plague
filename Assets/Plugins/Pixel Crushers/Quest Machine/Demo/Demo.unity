@@ -70504,6 +70504,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11405054, guid: f907b1416ebdbf645a73183ab47aa2b8, type: 3}
+      propertyPath: m_allowOnlyOneInstance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405054, guid: f907b1416ebdbf645a73183ab47aa2b8, type: 3}
+      propertyPath: m_completedQuestDialogueMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22400238, guid: f907b1416ebdbf645a73183ab47aa2b8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -71072,7 +71080,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11409428, guid: f907b1416ebdbf645a73183ab47aa2b8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

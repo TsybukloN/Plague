@@ -41,6 +41,7 @@ MonoBehaviour:
   m_showInTrackHUD: 1
   m_isAbandonable: 1
   m_rememberIfAbandoned: 0
+  m_deleteWhenComplete: 0
   m_autostartConditionSet:
     m_conditionList: []
     m_conditionCountMode: 0
@@ -56,6 +57,7 @@ MonoBehaviour:
   m_offerContentList:
   - {fileID: 11443982}
   - {fileID: 11453408}
+  m_infinitelyRepeatable: 0
   m_maxTimes: 1
   m_timesAccepted: 0
   m_cooldownSeconds: 3600
@@ -241,8 +243,8 @@ MonoBehaviour:
     m_childIndexList: 0300000004000000
     m_canvasRect:
       serializedVersion: 2
-      x: 180
-      y: 120
+      x: 181
+      y: 121
       width: 120
       height: 48
   - m_id:
@@ -390,6 +392,7 @@ MonoBehaviour:
       y: 274
       width: 120
       height: 35
+  m_textTable: {fileID: 0}
   m_goalEntityTypeName: 
   m_nextContentID: 0
 --- !u!114 &11402898
@@ -404,11 +407,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732e99ba3b575dc4dad61a69b0417c96, type: 3}
   m_Name: QuestStateQuestCondition
   m_EditorClassIdentifier: 
+  m_alreadyTrue: 0
+  m_requiredQuest: {fileID: 0}
   m_requiredQuestID:
     m_text: harvestCarrots
     m_stringAsset: {fileID: 0}
     m_textTable: {fileID: 0}
     m_textTableFieldID: 0
+  m_isNot: 0
   m_requiredState: 2
 --- !u!114 &11409426
 MonoBehaviour:
@@ -572,6 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5682394e55a192147a020b9edf624e51, type: 3}
   m_Name: MessageQuestCondition
   m_EditorClassIdentifier: 
+  m_alreadyTrue: 0
   m_senderSpecifier: 0
   m_senderID:
     m_text: 
@@ -665,6 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5682394e55a192147a020b9edf624e51, type: 3}
   m_Name: MessageQuestCondition
   m_EditorClassIdentifier: 
+  m_alreadyTrue: 0
   m_senderSpecifier: 0
   m_senderID:
     m_text: 
@@ -703,6 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c14ca0a3639b4a4f8084914f2e7227f, type: 3}
   m_Name: SetQuestNodeStateQuestAction
   m_EditorClassIdentifier: 
+  m_questToSet: {fileID: 0}
   m_questID:
     m_text: 
     m_stringAsset: {fileID: 0}
@@ -726,6 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c14ca0a3639b4a4f8084914f2e7227f, type: 3}
   m_Name: SetQuestNodeStateQuestAction
   m_EditorClassIdentifier: 
+  m_questToSet: {fileID: 0}
   m_questID:
     m_text: 
     m_stringAsset: {fileID: 0}
@@ -806,6 +816,7 @@ MonoBehaviour:
   m_useAudioSourceOn:
     m_type: 0
     m_id: 
+  m_interruptPreviousClip: 0
   m_audioNameProxy: 
 --- !u!114 &11493080
 MonoBehaviour:
