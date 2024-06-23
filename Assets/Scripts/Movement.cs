@@ -1,4 +1,5 @@
 using Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -11,6 +12,8 @@ public class Movement : MonoBehaviour
     public float sneakSpeed;
     public float smoothTime;
 
+    public GameObject DialogeWidow;
+
     private float smoothVelocity;
     private float horizontal;
     private float vertical;
@@ -19,12 +22,23 @@ public class Movement : MonoBehaviour
 
     private Vector3 direction;
 
-    private const float gravity = 1000f;
+    private const float gravity = 10000f;
+
+    public AudioSource audioSource;
+    public AudioClip[] footstepSounds;
+    private float stepTimer;
+    public float stepWalkingInterval = 0.01f;
+    public float stepRuningInterval = 0.05f;
+    public float stepSneakingInterval = 0.03f;
 
     private void Start()
     {
         Cursor.visible = false;
         animator = GetComponent<Animator>();
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -38,7 +52,7 @@ public class Movement : MonoBehaviour
 
         direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f && !DialogeWidow.gameObject.activeSelf)
         {
             float currentSpeed;
 
@@ -46,16 +60,19 @@ public class Movement : MonoBehaviour
             {
                 currentSpeed = runSpeed;
                 animator.SetInteger("WalkIndecator", 3);
+                PlayFootstepSound(stepRuningInterval);
             }
             else if (sneakingKey != 0f)
             {
                 currentSpeed = sneakSpeed;
                 animator.SetInteger("WalkIndecator", 1);
+                PlayFootstepSound(stepSneakingInterval);
             }
             else
             {
                 currentSpeed = walkSpeed;
                 animator.SetInteger("WalkIndecator", 2);
+                PlayFootstepSound(stepWalkingInterval);
             }
 
             Quaternion lookRotation = Quaternion.Euler(0f, cameraAngle, 0f);
@@ -79,6 +96,21 @@ public class Movement : MonoBehaviour
         {
             direction.y -= gravity * Time.fixedDeltaTime;
             controller.Move(direction * Time.fixedDeltaTime);
+        }
+    }
+
+    private void PlayFootstepSound(float stepInterval)
+    {
+        if (footstepSounds.Length > 0)
+        {
+            stepTimer += Time.deltaTime;
+            if (stepTimer >= stepInterval)
+            {
+                int n = Random.Range(0, footstepSounds.Length);
+                audioSource.clip = footstepSounds[n];
+                audioSource.PlayOneShot(audioSource.clip);
+                stepTimer = 0f;
+            }
         }
     }
 }
