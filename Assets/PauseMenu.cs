@@ -28,7 +28,8 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
-        authorsTextUI.SetActive(false); 
+        authorsTextUI.SetActive(false);
+        Cursor.visible = false;
     }
 
     void Pause()
@@ -36,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        Cursor.visible = true;
     }
 
     public void ShowAuthors()
